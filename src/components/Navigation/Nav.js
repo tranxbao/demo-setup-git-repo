@@ -8,7 +8,7 @@ const Nav = () => {
         <NavLink className="active" exact to="/">Home</NavLink>
         <NavLink to="/product">Product</NavLink>
         <NavLink to="/weather">Weather App</NavLink>
-        <NavLink to="/about">About</NavLink>
+        <NavLink to="/otp">OTP App</NavLink>
     </div>
   )
 }

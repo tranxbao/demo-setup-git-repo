@@ -7,6 +7,7 @@ import Product from './components/Products/Product';
 import 'react-image-lightbox/style.css';
 import {BrowserRouter as Router, Switch,Route,Link} from "react-router-dom"
 import Weather from './components/Weather/Weather';
+import OTP from './components/OTP/OTP'
 
 
 const App = () => {
@@ -33,8 +34,8 @@ const App = () => {
           <Route path="/weather">
            <Weather/>
           </Route>
-          <Route path="/about">
-            <div>About</div>
+          <Route path="/otp">
+            <OTP/>
           </Route>
           <Route path="*">
              <div>404 Not Found</div>
