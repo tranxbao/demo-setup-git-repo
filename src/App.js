@@ -13,25 +13,25 @@ import OTP from './components/OTP/OTP'
 const App = () => {
   return (
   <Router>
-    <Nav/>
+    <Nav />
     <Switch>
-         <Route exact path="/" >
+        <Route path="/" exact >
           <div className="App">
-      <header className="App-header content-left">
-         <div style={{textAlign:"center"}}> <img src={logo} className="App-logo" alt="logo" /></div>
-         <Home/>
-      </header>
-      <div className='content-right'>
-          <AddNewProduct/>
-          <hr />
-          <Product/>
-      </div>
-    </div>
-          </Route>
+              <header className="App-header content-left">
+               <div style={{textAlign:"center"}}> <img src={logo} className="App-logo" alt="logo" /></div>
+               <Home/>
+               </header>
+            <div className='content-right'>
+            <AddNewProduct/>
+            <hr />
+            <Product/>
+            </div>
+           </div>
+        </Route>
           <Route path="/product">
           <Product/>
           </Route>
-          <Route path="/weather">
+          <Route path="/weather" >
            <Weather/>
           </Route>
           <Route path="/otp">
