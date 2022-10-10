@@ -37,8 +37,9 @@ const Weather = () => {
   const handleSubmit = (e) =>{
     if (e.keyCode === 13){
       setCity(e.currentTarget.value)
-      e.currentTarget.blur()
+      e.currentTarget.value = ""
     }
+    
   }
   
   return (

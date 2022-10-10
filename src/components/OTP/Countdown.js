@@ -1,28 +1,22 @@
-import { useEffect, useState } from "react"
+import React, { useEffect, useState } from "react";
 
+const CountDown = (props) => {
+  const [count, setCount] = useState(10);
 
-const Countdown = (props) => {
-    const [count,setCount] = useState(60)
-
-
-useEffect(()=>{
+  useEffect(() => {
     if (count === 0) {
-        props.setDisableBtn(true)
-        return;
+      props.setIsDisableBtn(true);
+      return;
     }
-   const timer = setInterval(() => {
-        setCount(count-1)
+    const timer = setInterval(() => {
+      setCount(count - 1);
     }, 1000);
-    return ()=>{
-        clearInterval(timer)
-    }
-},[count])
 
-  return (
-    <div>
-        {count}
-    </div>
-  )
-}
+    return () => {
+      clearInterval(timer);
+    };
+  }, [count]);
+  return <div>{count}</div>;
+};
 
-export default Countdown
+export default CountDown;
