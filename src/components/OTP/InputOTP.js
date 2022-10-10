@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import OtpInput from 'react-otp-input';
-import CountDown from './CountDown';
+import Countdown from './Countdown';
 import CountDownAnimation from './CountDownAnimation';
 
 const InputOTP = (props) => {
@@ -30,7 +30,7 @@ const InputOTP = (props) => {
                 inputStyle={"input-customize"}
             />
             <div className='timer'>
-                {/* <CountDown
+                {/* <Countdown
                     setIsDisableBtn={props.setIsDisableBtn}
                 /> */}
                 <CountDownAnimation

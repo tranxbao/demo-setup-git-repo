@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const CountDown = (props) => {
+const Countdown = (props) => {
   const [count, setCount] = useState(10);
 
   useEffect(() => {
@@ -19,4 +19,4 @@ const CountDown = (props) => {
   return <div>{count}</div>;
 };
 
-export default CountDown;
+export default Countdown;
